@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    height: 60px;
+    width: 160px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    border: 1px groove red;
+}
+
+#btn:hover{
+    height: 70px;
+    width: 180px;
+    font-size: 26px;;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: all 1s;
+}
