@@ -82,7 +82,7 @@ function promedio() {
   let primerTrimestre = parseFloat(
     prompt("Ingresa la nota de tu primer trimestre")
   );
-  if (isNaN(primerTrimestre) || primerTrimestre > 10 || primerTrimestre < 0) {
+  if (isNaN(primerTrimestre) || primerTrimestre > 10 || primerTrimestre < 1) {
     alert("Por favor, ingresa un numero del 1 al 10");
   } else {
     let segundoTrimestre = parseFloat(
@@ -91,7 +91,7 @@ function promedio() {
     if (
       isNaN(segundoTrimestre) ||
       segundoTrimestre > 10 ||
-      segundoTrimestre < 0
+      segundoTrimestre < 1
     ) {
       alert("Por favor, ingresa un numero del 1 al 10");
     } else {
@@ -101,15 +101,16 @@ function promedio() {
       if (
         isNaN(tercerTrimestre) ||
         tercerTrimestre > 10 ||
-        tercerTrimestre < 0
+        tercerTrimestre < 1
       ) {
         alert("Por favor, ingresa un numero del 1 al 10");
       } else {
-        resultado = primerTrimestre + segundoTrimestre + tercerTrimestre;
-        if (resultado >= 21) {
-          alert("Tu promedio es de " + resultado + "/30" + "\n Aprobaste!");
+        const resultado = primerTrimestre + segundoTrimestre + tercerTrimestre;
+        const promedio = resultado / 3;
+        if (promedio >= 7) {
+          alert("Tu promedio es de " + promedio + "/10" + "\n Aprobaste!");
         } else {
-          alert("Tu promedio es de " + resultado + "/30" + "\n Desabrobaste!");
+          alert("Tu promedio es de " + promedio + "/10" + "\n Desabrobaste!");
         }
       }
     }
