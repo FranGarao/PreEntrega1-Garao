@@ -109,7 +109,7 @@ function promedio() {
         if (resultado >= 21) {
           alert("Tu promedio es de " + resultado + "/30" + "\n Aprobaste!");
         } else {
-          alert("Tu promedio es de " + resultado + "\n Desabrobaste!");
+          alert("Tu promedio es de " + resultado + "/30" + "\n Desabrobaste!");
         }
       }
     }
