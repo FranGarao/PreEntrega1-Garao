@@ -10,7 +10,7 @@ const tocarBotonDos = btnTwo.addEventListener("click", () => {
 function names() {
   alert("Ingresa el nombre de los 5 alumnos");
   let primerAlumno = prompt("Ingresa el primer alumno");
-  if (primerAlumno === "" || !isNaN(primerAlumno)) {
+  if (primerAlumno === "" || !isNaN(primerAlumno) || /\d/.test(primerAlumno)) {
     alert(
       "Debe ingresar un nombre\nPor favor reinicie la pagina o aprete el boton"
     );
@@ -18,26 +18,39 @@ function names() {
     segundoAlumno = prompt("Ingresa el segundo alumno");
     if (
       segundoAlumno === "" ||
-      (!isNaN(segundoAlumno) && typeof segundoAlumno === "string")
+      !isNaN(segundoAlumno) ||
+      /\d/.test(segundoAlumno)
     ) {
       alert(
         "Debe ingresar un nombre\nPor favor reinicie la pagina o aprete el boton"
       );
     } else {
       tercerAlumno = prompt("Ingresa el tercer alumno");
-      if (tercerAlumno === "" || !isNaN(tercerAlumno)) {
+      if (
+        tercerAlumno === "" ||
+        !isNaN(tercerAlumno) ||
+        /\d/.test(tercerAlumno)
+      ) {
         alert(
           "Debe ingresar un nombre\nPor favor reinicie la pagina o aprete el boton"
         );
       } else {
         cuartoAlumno = prompt("Ingresa el cuarto alumno");
-        if (cuartoAlumno === "" || !isNaN(cuartoAlumno)) {
+        if (
+          cuartoAlumno === "" ||
+          !isNaN(cuartoAlumno) ||
+          /\d/.test(cuartoAlumno)
+        ) {
           alert(
             "Debe ingresar un nombre\nPor favor reinicie la pagina o aprete el boton"
           );
         } else {
           quintoAlumno = prompt("Ingresa el quinto alumno");
-          if (quintoAlumno === "" || !isNaN(quintoAlumno)) {
+          if (
+            quintoAlumno === "" ||
+            !isNaN(quintoAlumno) ||
+            /\d/.test(quintoAlumno)
+          ) {
             alert(
               "Debe ingresar un nombre\nPor favor reinicie la pagina o aprete el boton"
             );

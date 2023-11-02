@@ -1,0 +1,6 @@
+  if (
+      segundoAlumno === "" ||
+      !isNaN(segundoAlumno)
+    )
+
+ 
