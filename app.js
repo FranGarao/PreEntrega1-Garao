@@ -90,7 +90,7 @@ function names() {
 
 function promedio() {
   alert(
-    "Vamos a calcular tu promedio, la nota final debe ser mayor o igual a 21 para aprobar."
+    "Vamos a calcular tu promedio, la nota final debe ser mayor o igual a 7 para aprobar."
   );
   let primerTrimestre = parseFloat(
     prompt("Ingresa la nota de tu primer trimestre")
